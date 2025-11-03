@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "front": "apple",
+        "back": "яблоко"
+    },
+    {
+        "id": 2,
+        "front": "red",
+        "back": "красный"
+    },
+    {
+        "id": 3,
+        "front": "dog",
+        "back": "собака"
+    },
+    {
+        "id": 4,
+        "front": "blue",
+        "back": "синий"
+    },
+    {
+        "id": 5,
+        "front": "kitty",
+        "back": "кошка"
+    },
+    {
+        "id": 6,
+        "front": "mouse",
+        "back": "мышка"
+    },
+    {
+        "id": 7,
+        "front": "house",
+        "back": "дом"
+    },
+    {
+        "id": 8,
+        "front": "diary",
+        "back": "дневник"
+    },
+    {
+        "id": 9,
+        "front": "leg",
+        "back": "нога"
+    },
+    {
+        "id": 10,
+        "front": "eye",
+        "back": "глаз"
+    }
+]
