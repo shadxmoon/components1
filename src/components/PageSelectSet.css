@@ -1,0 +1,13 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.set{
+    background-color: rgba(25, 25, 112, 0.329);
+    border: 2px solid rgb(14, 14, 129);
+    border-radius: 10px;
+    width: 200px;
+    padding: 30px;
+}

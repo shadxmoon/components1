@@ -2,51 +2,122 @@
     {
         "id": 1,
         "front": "apple",
-        "back": "яблоко"
+        "back": "яблоко",
+        "setName": "English"
     },
     {
         "id": 2,
         "front": "red",
-        "back": "красный"
+        "back": "красный",
+        "setName": "English"
     },
     {
         "id": 3,
         "front": "dog",
-        "back": "собака"
+        "back": "собака",
+        "setName": "English"
     },
     {
         "id": 4,
         "front": "blue",
-        "back": "синий"
+        "back": "синий",
+        "setName": "English"
     },
     {
         "id": 5,
         "front": "kitty",
-        "back": "кошка"
+        "back": "кошка",
+        "setName": "English"
     },
     {
         "id": 6,
         "front": "mouse",
-        "back": "мышка"
+        "back": "мышка",
+        "setName": "English"
     },
     {
         "id": 7,
         "front": "house",
-        "back": "дом"
+        "back": "дом",
+        "setName": "English"
     },
     {
         "id": 8,
         "front": "diary",
-        "back": "дневник"
+        "back": "дневник",
+        "setName": "English"
     },
     {
         "id": 9,
         "front": "leg",
-        "back": "нога"
+        "back": "нога",
+        "setName": "English"
     },
     {
         "id": 10,
         "front": "eye",
-        "back": "глаз"
+        "back": "глаз",
+        "setName": "English"
+    },
+    {
+        "id": 11,
+        "front": "огурец",
+        "back": "овощ",
+        "setName":"fruits"
+    },
+    {
+        "id": 12,
+        "front": "яблоко",
+        "back": "фрукт",
+        "setName": "fruits"
+    },
+    {
+        "id": 13,
+        "front": "манго",
+        "back": "фрукт",
+        "setName": "fruits"
+    },
+    {
+        "id": 14,
+        "front": "помидор",
+        "back": "овощ",
+        "setName": "fruits"
+    },
+    {
+        "id": 15,
+        "front": "томат",
+        "back": "овощ",
+        "setName": "fruits"
+    },
+    {
+        "id": 16,
+        "front": "кабачок",
+        "back": "овощ",
+        "setName": "фруктоовощи"
+    },
+    {
+        "id": 17,
+        "front": "апельсин",
+        "back": "фрукт(цитрус)",
+        "setName": "фруктоовощи"
+    },
+    {
+        "id": 18,
+        "front": "редис",
+        "back": "овощ",
+        "setName": "фруктоовощи"
+    },
+    {
+        "id": 19,
+        "front": "маракуйя",
+        "back": "фрукт",
+        "setName": "фруктоовощи"
+    },
+    {
+        "id": 20,
+        "front": "гранат",
+        "back": "фрукт",
+        "setName": "фруктоовощи"
     }
+
 ]

@@ -6,3 +6,7 @@
   color: white;
   position: fixed;
 }
+.createSet{
+  background-color: transparent;
+  border:none;
+}
