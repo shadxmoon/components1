@@ -1,0 +1,50 @@
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+    width: 350px;
+}
+.form__item input,
+.form__item textarea,
+.form__item button {
+  box-sizing: border-box;
+}
+
+label{
+    color: rgb(107, 81, 134);
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-weight: 500;
+}
+.form__item input[type='text'], textarea, select{
+    border:none;
+    background-color: #f7c8f498;
+    padding: 20px;
+    border-radius: 5px;
+    width: 100%;
+     appearance: none;          /* 🔥 убираем системную стрелку */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+select{
+    background-color: #e0d7f7;;
+}
+p{
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+    color:  #b565e4;
+    text-align: left;
+}
+.form__item input[type='submit']{
+    border:none;
+    background-color:#ad80d1;
+    padding: 12px 30px;
+    border-radius: 6px;
+    color: white;  
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+}

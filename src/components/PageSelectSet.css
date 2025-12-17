@@ -1,13 +1,31 @@
-.container{
+.select-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.set-list{
     display: flex;
     flex-direction: row;
-    gap: 25px;
+    gap: 30px;
 }
-
-.set{
-    background-color: rgba(25, 25, 112, 0.329);
-    border: 2px solid rgb(14, 14, 129);
-    border-radius: 10px;
-    width: 200px;
-    padding: 30px;
+ul{
+    padding-inline-start: 0;
+}
+.edit-mode-btn{
+    background-color: transparent;
+    border-radius: 0;
+    margin-top: 0;
+    border: none;
+    padding: 10px;
+    color:  #e29fde;
+    text-shadow: 0 2px 8px #f5c1ff77;
+}
+@keyframes jiggle {
+  0%   { transform: rotate(-0.8deg);}
+  50%  { transform: rotate(1deg);}
+  100% { transform: rotate(-0.8deg);}
+}
+.edit-mode .set-btn-wrapper {
+  animation: jiggle 0.25s infinite ease-in-out;
+  transform-origin: center;
 }

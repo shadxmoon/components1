@@ -1,5 +1,8 @@
 h2{
-    color: black;
+    color: #ad80d1;
+}
+body{
+    font-weight: 400;
 }
 .elements{
     display: flex;
@@ -7,9 +10,13 @@ h2{
     align-items: center;
     gap: 20px;
 }
-button{
+.slide-btn{
     border-radius: 50%;
-    border: solid 1px black;
+    background-color:#ad80d1d3;
     width: 50px;
     height: 50px;
+    color: white;
+}
+.counter{
+    color: #1c1627;
 }

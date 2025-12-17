@@ -1,0 +1,10 @@
+.creation-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+.create-link{
+    color:  #e29fde;
+    text-shadow: 0 2px 8px #f5c1ff71;
+}

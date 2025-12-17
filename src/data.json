@@ -61,63 +61,62 @@
     },
     {
         "id": 11,
-        "front": "огурец",
-        "back": "овощ",
-        "setName":"fruits"
+        "front": "box-shadow",
+        "back": "тень",
+        "setName":"CSS-свойства"
     },
     {
         "id": 12,
-        "front": "яблоко",
-        "back": "фрукт",
-        "setName": "fruits"
+        "front": "color",
+        "back": "цвет",
+        "setName": "CSS-свойства"
     },
     {
         "id": 13,
-        "front": "манго",
-        "back": "фрукт",
-        "setName": "fruits"
+        "front": "border-radius",
+        "back": "скругление краев",
+        "setName": "CSS-свойства"
     },
     {
         "id": 14,
-        "front": "помидор",
-        "back": "овощ",
-        "setName": "fruits"
+        "front": "background-image",
+        "back": "фоновая картинка",
+        "setName": "CSS-свойства"
     },
     {
         "id": 15,
-        "front": "томат",
-        "back": "овощ",
-        "setName": "fruits"
+        "front": "font-weight",
+        "back": "толщина шрифта",
+        "setName": "CSS-свойства"
     },
     {
         "id": 16,
-        "front": "кабачок",
-        "back": "овощ",
-        "setName": "фруктоовощи"
+        "front": "font-family",
+        "back": "шрифт",
+        "setName": "CSS-свойства"
     },
     {
         "id": 17,
-        "front": "апельсин",
-        "back": "фрукт(цитрус)",
-        "setName": "фруктоовощи"
+        "front": "background-color",
+        "back": "цвет фона",
+        "setName": "CSS-свойства"
     },
     {
         "id": 18,
-        "front": "редис",
-        "back": "овощ",
-        "setName": "фруктоовощи"
+        "front": "border",
+        "back": "рамка",
+        "setName": "CSS-свойства"
     },
     {
         "id": 19,
-        "front": "маракуйя",
-        "back": "фрукт",
-        "setName": "фруктоовощи"
+        "front": "margin",
+        "back": "внешние отступы",
+        "setName": "CSS-свойства"
     },
     {
         "id": 20,
-        "front": "гранат",
-        "back": "фрукт",
-        "setName": "фруктоовощи"
+        "front": "padding",
+        "back": "внутренние отступы",
+        "setName": "CSS-свойства"
     }
-
 ]

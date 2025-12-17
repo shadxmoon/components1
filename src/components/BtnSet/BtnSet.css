@@ -1,0 +1,33 @@
+.set-btn-wrapper {
+  position: relative; 
+  display: inline-block;
+}
+
+.link-set__btn {
+  color: #fff;
+  font-weight: 400;
+  background-color: #ad80d1;
+  border-radius: 15px;
+  padding: 30px;
+  display: block;
+  width: 100px;
+  height: 25px;
+}
+
+.delete-set-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 28px;
+  height: 28px;
+  background-color: transparent;
+  color: #333;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.delete-set-btn:hover {
+  color: #f1c6e8; 
+}

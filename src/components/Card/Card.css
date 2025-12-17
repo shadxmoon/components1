@@ -7,8 +7,7 @@
     margin: 20px auto;
     align-items: center;
     justify-content: center;
-    background-color: lavenderblush;
-    border: solid 1px gray;
+    background-color:#e0d7f7;
     border-radius: 10px;
     cursor: pointer;
     transition: transform 0.5s;
@@ -24,8 +23,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: lemonchiffon;
-    border: solid 1px gray;
+    background-color:#f1c6e8; 
     border-radius: 10px;
     transform: rotateX(180deg);
     backface-visibility: hidden;

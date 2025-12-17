@@ -3,21 +3,29 @@ import { PageSelectSet } from './components/PageSelectSet.jsx'
 import { PageViewSet } from './components/PageViewSet.jsx'
 import { PageCreateSet } from './components/PageCreateSet.jsx'
 import './App.css'
+import { FormCreateSet } from './components/FormCreateSet/FormCreateSet.jsx'
+import { FormCreateCard } from './components/FormCreateCard.jsx'
+import cards from './data.json';
+import { getData, saveData } from './storage';
+import React from 'react'
 
 function App() {
+  React.useEffect(() => {
+    if (getData().length === 0) {
+      saveData(cards);
+    }
+  }, []);
   return (
-    /*<div className="App">
-      <Header/>
-      <Set />
-    </div>*/
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<PageSelectSet/>}/>
-        <Route path='/set' element={<PageViewSet/>}/>
-        <Route path='/admin' element={<PageCreateSet/>}/>
-
+        <Route path='/set/:id' element={<PageViewSet/>}/>
+        <Route path='/admin' element={<PageCreateSet/>}>
+          <Route path='createset' element={<FormCreateSet/>}/>
+          <Route path='createcard' element={<FormCreateCard/>}/>
+        </Route>
         <Route path='*' element={<PageSelectSet/>}/>
-      </Routes>
+      </Routes> 
     </BrowserRouter>
   )
 }
