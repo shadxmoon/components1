@@ -3,29 +3,21 @@ import { useState, useEffect } from "react";
 import { Header } from "./Header/Header";
 import './PageSelectSet.css'
 import { BtnSet } from "./BtnSet/BtnSet";
-import { getData, deleteSet } from '../storage';
+import { getSets, deleteSetById } from '../storage';
 
 export function PageSelectSet() {
-  const [cards, setCards] = useState([]);
+  const [sets, setSets] = useState([])
   const [isEditMode, setIsEditMode] = useState(false)
 
   useEffect(() => {
-    setCards(getData());
-  }, []);
-  const handleDelete = (setName) => {
-    if (!window.confirm(`Удалить сет "${setName}"?`)) return
-    deleteSet(setName)
-    setCards(getData()) // 🔥 реактивное обновление
+    setSets(getSets())
+  }, [])
+  const handleDelete = (id) => {
+    const targetSet = sets.find(s => s.id === id)
+    if (!window.confirm(`Удалить сет "${targetSet?.name}"?`)) return
+    deleteSetById(id)
+    setSets(getSets()) 
   }
-  const sets = [...new Set(cards.map(c => c.setName))]
-    .map((name, index) => (
-      <BtnSet
-      key={index}
-      name={name}
-      id={index}
-      isEditMode={isEditMode}
-      onDelete={handleDelete}/>
-    ));
 
   return (
     <>
@@ -34,7 +26,17 @@ export function PageSelectSet() {
         <h2> ♡ выбор сетов ♡ </h2>
 
         <ul className='set-list'>
-           {sets.length ? sets : <p>Сетов пока нет</p>}
+          {sets.length ? (
+            sets.map(set => (
+            <BtnSet
+            key={set.id}
+            id={set.id}
+            name={set.name}
+            isEditMode={isEditMode}
+            onDelete={() => handleDelete(set.id)}
+            />
+          ))
+        ) : (<p>сетов пока нет</p>)}
         </ul>
 
         <button

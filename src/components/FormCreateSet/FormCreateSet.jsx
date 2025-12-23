@@ -1,26 +1,28 @@
 import './FormCreateSet.css'
-import { getData, saveData } from '../../storage';
+import { getSets, saveSets } from '../../storage';
 import { useNavigate } from 'react-router-dom';
 import { useForm } from 'react-hook-form'
 export function FormCreateSet(){
     const navigate = useNavigate()
-    const {register, handleSubmit, formState : {errors}} = useForm({defaultValues: {name: "", description: ""}})
+    const {register, handleSubmit, formState : {errors}} = useForm({defaultValues: {setId:"", name: "", description: ""}})
     console.log(errors)
 
     const onSubmit = (data) => {
-    const cards = getData();
+    if (!data.name || !data.name.trim()) return
+    const sets = getSets();
+    const newSet = {
+      id: Date.now().toString(),
+      name: data.name.trim(),
+      description: data.description,
+      cards: [] 
+    }
 
-    const newSetCard = {
-      id: Date.now(),
-      setName: data.name,
-      front: 'Первая карточка',
-      back: 'Описание'
-    };
+    saveSets([...sets, newSet])
 
-    saveData([...cards, newSetCard]);
-    navigate('/');
-  };
-
+    navigate('/admin/createcard', {
+      state: { preselectedSetId: newSet.id }
+    })
+}
 
     return (
         <form onSubmit={handleSubmit(onSubmit)}>

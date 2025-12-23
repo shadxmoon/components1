@@ -1,16 +1,21 @@
-const STORAGE_KEY = 'cardsData';
+import initialSets from './data.json'
 
-export function getData() {
-  const data = localStorage.getItem(STORAGE_KEY);
-  return data ? JSON.parse(data) : [];
+const STORAGE_KEY = 'setsData'
+
+export function getSets() {
+  const raw = localStorage.getItem(STORAGE_KEY)
+  if (raw) return JSON.parse(raw)
+
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(initialSets))
+  return initialSets
 }
 
-export function saveData(data) {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+export function saveSets(sets) {
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(sets))
 }
 
-export function deleteSet(setName) {
-  const data = getData();
-  const filtered = data.filter(card => card.setName !== setName);
-  saveData(filtered);
+export function deleteSetById(setId) {
+  const sets = getSets();
+  const filtered = sets.filter(set => set.id !== setId);
+  saveSets(filtered);
 }

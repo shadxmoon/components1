@@ -1,33 +1,48 @@
-import React from "react"
+import {useEffect} from "react"
 import { useInput } from "./UseInput"
 import { useForm } from 'react-hook-form'
-import { getData, saveData } from '../storage'
+import { getSets, saveSets } from '../storage'
+import { useLocation, useNavigate } from "react-router-dom"
 
 export function FormCreateCard(){
-    const {register, handleSubmit, formState : {errors}} = useForm({defaultValues: {frontText: "", backText: ""}})
+    const navigate = useNavigate()
+    const location = useLocation()
+    const preselectedSetId = location.state?.preselectedSetId
+    const sets = getSets()
+    const {register, handleSubmit, setValue, formState : {errors}} = useForm({defaultValues: {setId:"", frontText: "", backText: ""}})
         console.log(errors)
-    const cards = getData()
-    const sets = [...new Set(cards.map(c => c.setName))]
+    useEffect(() => {
+        if (preselectedSetId) {
+            setValue('setId', preselectedSetId)
+        }
+    }, [preselectedSetId, setValue])
+
     const onSubmit = (data) => {
-  const newCard = {
-    id: Date.now(),
-    setName: data.setName, // 🔥 ВАЖНО
-    front: data.frontText,
-    back: data.backText
-  }
-
-  saveData([...cards, newCard])
+    const updatedSets = sets.map(set => {
+      if (set.id !== data.setId) return set
+      return {
+        ...set,
+        cards: [
+            ...set.cards,
+            {
+                id: Date.now().toString(),
+                front: data.frontText,
+                back: data.backText
+            }
+        ]
     }
-
-
+})
+    saveSets(updatedSets)
+    navigate('/');
+    }
     return (
         <form onSubmit={handleSubmit(onSubmit)}>
             <label>Набор</label>
             <select {...register('setName', { required: true })}>
                 <option value="">Выберите набор</option>
-                {sets.map(name => (
-                    <option key={name} value={name}>
-                        {name}
+                {sets.map(set => (
+                    <option key={set.id} value={set.id}>
+                        {set.name}
                     </option>
                 ))}
             </select>

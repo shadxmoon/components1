@@ -6,13 +6,13 @@ import './App.css'
 import { FormCreateSet } from './components/FormCreateSet/FormCreateSet.jsx'
 import { FormCreateCard } from './components/FormCreateCard.jsx'
 import cards from './data.json';
-import { getData, saveData } from './storage';
+import { getSets, saveSets } from './storage';
 import React from 'react'
 
 function App() {
   React.useEffect(() => {
-    if (getData().length === 0) {
-      saveData(cards);
+    if (getSets().length === 0) {
+      saveSets(cards);
     }
   }, []);
   return (

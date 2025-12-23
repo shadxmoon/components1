@@ -1,122 +1,36 @@
 [
-    {
-        "id": 1,
-        "front": "apple",
-        "back": "яблоко",
-        "setName": "English"
-    },
-    {
-        "id": 2,
-        "front": "red",
-        "back": "красный",
-        "setName": "English"
-    },
-    {
-        "id": 3,
-        "front": "dog",
-        "back": "собака",
-        "setName": "English"
-    },
-    {
-        "id": 4,
-        "front": "blue",
-        "back": "синий",
-        "setName": "English"
-    },
-    {
-        "id": 5,
-        "front": "kitty",
-        "back": "кошка",
-        "setName": "English"
-    },
-    {
-        "id": 6,
-        "front": "mouse",
-        "back": "мышка",
-        "setName": "English"
-    },
-    {
-        "id": 7,
-        "front": "house",
-        "back": "дом",
-        "setName": "English"
-    },
-    {
-        "id": 8,
-        "front": "diary",
-        "back": "дневник",
-        "setName": "English"
-    },
-    {
-        "id": 9,
-        "front": "leg",
-        "back": "нога",
-        "setName": "English"
-    },
-    {
-        "id": 10,
-        "front": "eye",
-        "back": "глаз",
-        "setName": "English"
-    },
-    {
-        "id": 11,
-        "front": "box-shadow",
-        "back": "тень",
-        "setName":"CSS-свойства"
-    },
-    {
-        "id": 12,
-        "front": "color",
-        "back": "цвет",
-        "setName": "CSS-свойства"
-    },
-    {
-        "id": 13,
-        "front": "border-radius",
-        "back": "скругление краев",
-        "setName": "CSS-свойства"
-    },
-    {
-        "id": 14,
-        "front": "background-image",
-        "back": "фоновая картинка",
-        "setName": "CSS-свойства"
-    },
-    {
-        "id": 15,
-        "front": "font-weight",
-        "back": "толщина шрифта",
-        "setName": "CSS-свойства"
-    },
-    {
-        "id": 16,
-        "front": "font-family",
-        "back": "шрифт",
-        "setName": "CSS-свойства"
-    },
-    {
-        "id": 17,
-        "front": "background-color",
-        "back": "цвет фона",
-        "setName": "CSS-свойства"
-    },
-    {
-        "id": 18,
-        "front": "border",
-        "back": "рамка",
-        "setName": "CSS-свойства"
-    },
-    {
-        "id": 19,
-        "front": "margin",
-        "back": "внешние отступы",
-        "setName": "CSS-свойства"
-    },
-    {
-        "id": 20,
-        "front": "padding",
-        "back": "внутренние отступы",
-        "setName": "CSS-свойства"
-    }
+  {
+    "id": "english",
+    "name": "English",
+    "description": "",
+    "cards": [
+      { "id": 1, "front": "apple", "back": "яблоко" },
+      { "id": 2, "front": "red", "back": "красный" },
+      { "id": 3, "front": "dog", "back": "собака" },
+      { "id": 4, "front": "blue", "back": "синий" },
+      { "id": 5, "front": "kitty", "back": "кошка" },
+      { "id": 6, "front": "mouse", "back": "мышка" },
+      { "id": 7, "front": "house", "back": "дом" },
+      { "id": 8, "front": "diary", "back": "дневник" },
+      { "id": 9, "front": "leg", "back": "нога" },
+      { "id": 10, "front": "eye", "back": "глаз" }
+    ]
+  },
+  {
+    "id": "css",
+    "name": "CSS-свойства",
+    "description": "",
+    "cards": [
+      { "id": 11, "front": "box-shadow", "back": "тень" },
+      { "id": 12, "front": "color", "back": "цвет" },
+      { "id": 13, "front": "border-radius", "back": "скругление краев" },
+      { "id": 14, "front": "background-image", "back": "фоновая картинка" },
+      { "id": 15, "front": "font-weight", "back": "толщина шрифта" },
+      { "id": 16, "front": "font-family", "back": "шрифт" },
+      { "id": 17, "front": "background-color", "back": "цвет фона" },
+      { "id": 18, "front": "border", "back": "рамка" },
+      { "id": 19, "front": "margin", "back": "внешние отступы" },
+      { "id": 20, "front": "padding", "back": "внутренние отступы" }
+    ]
+  }
 ]

@@ -12,13 +12,13 @@ ul{
     padding-inline-start: 0;
 }
 .edit-mode-btn{
-    background-color: transparent;
-    border-radius: 0;
-    margin-top: 0;
-    border: none;
-    padding: 10px;
-    color:  #e29fde;
-    text-shadow: 0 2px 8px #f5c1ff77;
+  background-color: transparent;
+  border-radius: 0;
+  margin-top: 0;
+  border: none;
+  padding: 10px;
+  color:  #e29fde;
+  text-shadow: 0 2px 8px #f5c1ff77;
 }
 @keyframes jiggle {
   0%   { transform: rotate(-0.8deg);}
